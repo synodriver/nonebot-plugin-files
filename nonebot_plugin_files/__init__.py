@@ -29,7 +29,7 @@ if TYPE_CHECKING:
 driver = get_driver()
 config = driver.config
 
-handlers_t: Dict[str, Type[BaseHandler]] = {
+handlers_t: Dict[str, Type["BaseHandler"]] = {
     "download": BaseDownloadHandler,
     "aria2": Aria2DownloadHandler,
     "ftp": FTPUploadHandler,
